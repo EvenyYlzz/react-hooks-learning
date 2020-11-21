@@ -8,6 +8,10 @@ class StateClass extends React.Component{
         }
     }
 
+    componentDidMount(){
+        console.log('类组件结束渲染')
+    }
+
     render() {
         return (
             <div onClick={ this.setName }>
