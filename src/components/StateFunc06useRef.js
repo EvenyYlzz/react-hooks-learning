@@ -17,7 +17,6 @@ function StateFunction () {
         },400 )
 
         // ref.current = '111'
-
     },[] )
 
     useEffect( () => {
