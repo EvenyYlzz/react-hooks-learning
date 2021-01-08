@@ -4,7 +4,7 @@ import React,{ useEffect, useState, useLayoutEffect, useMemo } from 'react'
 
 function StateFunction () {
 
-    const [num, setNum] = useState(0)
+    const [num, setNum] = useState(1)
     const [age, setAge] = useState(18)
 
     
@@ -14,7 +14,6 @@ function StateFunction () {
 
     //     return 2 * num
     // }
-
 
     //  useMemo使用方法
     //  1.接收一个函数作为参数
@@ -27,10 +26,18 @@ function StateFunction () {
     //  设定第二个参数只跟随num去更新
 
     return (
-        <div onClick={ () => setAge( age => age+1 ) }>
-            这是一个函数式组件————{  getDoubleNum }
+        <div onClick={ () => {
+            setAge( age => age+1 )
+            // setNum( num => num+1 )
+        }}>
+            【--------------------------------------------
+            <br></br>
+            这是一个函数式组件————num：{  getDoubleNum }
+            {/* 注意这里getDoubleNum有无括号区别 */}
             <br></br>
             age的值为————{ age }
+            <br></br>
+            ----------------------------------------------】
         </div>
     )
 }

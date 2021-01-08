@@ -1,7 +1,7 @@
 import logo from '../images/logo.svg';
 import StateClass from '../components/StateClass'
 // import StateFunction from '../components/StateFunction'
-import StateFunction from '../components/StateFunc02useEffect'
+import StateFunction from '../components/StateFunc04useMemo'
 import './App.css';
 
 import {  useEffect, useState } from 'react'
