@@ -4,7 +4,6 @@ import React,{ useState,useReducer } from 'react'
 //  redux必须的内容
 //  store reducer
 
-
 //  useReducer使用方法
 //  1.需要创建 数据仓库 store和 管理者 reducer
 //  2.通过useReducer(reducer, store)来获取state和dispatch
@@ -18,7 +17,7 @@ const reducer = (state, action) => {
         case 'add':
             return {
                 ...state,
-                num: action.num+1
+                num: action.num
             }
         
         default:
@@ -28,18 +27,15 @@ const reducer = (state, action) => {
     }
 }
 
-
 function StateFunction () {
-
     const [state,dispacth] = useReducer(reducer,store)
-
 
     return (
         <div>
             <button onClick={ () => {
                 dispacth({
                     type: 'add',
-                    num: state.num
+                    num: state.num+1
                 })
             } }>
                 增加num的值+1
