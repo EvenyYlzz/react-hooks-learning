@@ -1,7 +1,7 @@
 # react-hooks-learning
 
 #### 描述
-用以学习react的demo文件
+用以学习react hooks的demo文件
 
 #### 项目安装
 1.  git clone
